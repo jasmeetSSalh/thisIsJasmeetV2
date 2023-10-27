@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmeet Salh</title>
+    <!-- Link to Tailwind CSS and DaisyUI CDNs -->
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.16.0/dist/full.css" rel="stylesheet">
+    <link rel="stylesheet" href="myCSS/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="p-8" style="background-color: #314E52">
+        <div></div>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="p-4" style="width: 75%; background-color: whitesmoke;">
+        <div class="container mx-auto flex justify-between items-center" style="padding-left: 5%; padding-right: 5%;">
+            <a href="/index.html">
+                <img src="images/Intial - Png.png" alt="Logo" class="w-12 h-12">
+            </a>
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-links" class="hidden lg:flex space-x-4">
+                <a href="#AboutMe" class="nav-bar-text-color hover:text-blue-500">About Me</a>
+                <a href="#Projects" class="nav-bar-text-color hover:text-blue-500">Projects</a>
+                <a href="#ContactMe" class="nav-bar-text-color hover:text-blue-500">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Hero Section -->
+    <div id="AboutMe" class="hero min-h-auto bg-base-100 p-32" style="background-color: #314E52;">
+        <div class="container mx-auto w-3/4">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="flex flex-col items-center">
+                    <img src="images/IMG-4173-removebg-preview.png" class="rounded-lg" style="width:50rem"/>
+                    <a href="resume-link-here" class="btn btn-primary mt-4" style="background-color: whitesmoke; color: black;">View Resume</a>
+                </div>
+                
+                <div>
+                    <div class="bg-opacity-50 h-full flex flex-col justify-center items-center text-white">
+                        <h1 class="text-4xl font-bold">Jasmeet Salh</h1>
+                        <p class="text-lg">Developer | Designer | Creative</p>
+                        <p class="py-6">Hello, I'm Jasmeet Salh, a dedicated and aspiring computer scientist based in Toronto, Ontario. I am currently seeking an internship in the field of computer science to further develop my skills and gain hands-on experience in the ever-evolving world of technology. I am passionate about leveraging my technical expertise to create innovative and impactful solutions.</p>
+                    </div>
+                    <div class="w-full flex justify-center mt-4">
+                        <div class="mr-2 p-2">
+                            <a href="mailto:jasmeet.salh@gmail.com" class="img-btn">
+                                <img class="social-media-icons w-12 h-12" src="https://img.icons8.com/ios-filled/500/FFFFFF/gmail-new.png" alt="gmail-new">
+                            </a>
+                        </div>
+                        <div class="mr-2 p-2">
+                            <a href="https://github.com/jasmeetSSalh" class="img-btn">
+                                <img class="social-media-icons w-12 h-12" src="https://img.icons8.com/ios/500/FFFFFF/github--v1.png" alt="github--v1"/>
+                            </a>
+                        </div>
+                        <div class="mr-2 p-2">
+                            <a href="https://www.linkedin.com/in/jasmeet-salh-884486240/" class="img-btn">
+                                <img class="social-media-icons w-12 h-12" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="linkedin">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+
+
+
+        <h1 id="Projects" class="text-5xl font-bold text-center p-16">Projects</h1>
+
+        <div class="flex flex-wrap justify-center">
+            
+
+            <!-- Project 1 -->
+            <div class="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 px-4 mb-4 project-container" style="max-width: 500px;">
+                <div class="shadow-xl p-4 card-container rounded-lg" style="background-color: whitesmoke">
+                    <figure><img class="w-full shadow-xl" src="images/Projects/featherWeather.png" alt="Album"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title nav-bar-text-color">Feather Weather</h2>
+                        <p class="nav-bar-text-color">The Feather Weather Application is a weather tracking web app that utilizes Node.js, Express.js, EJS, and Axios to provide real-time weather information for user-specified cities.</p>
+                        <div class="card-actions justify-center">
+                            <a href="https://github.com/jasmeetSSalh/feather-weather" class="btn btn-primary" style="background-color: #314E52; color: whitesmoke;">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 px-4 mb-4 project-container" style="max-width: 500px;">
+                <div class="shadow-xl p-4 card-container rounded-lg" style="background-color: whitesmoke">
+                    <figure><img class="w-full" src="images/Projects/GoogleScriptsAPI.png" alt="Album"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title nav-bar-text-color">API Integration & Web Scraping</h2>
+                        <p class="nav-bar-text-color">This project uses Google Sheet as a database to manage MLH events by scraping their website first, and converting the data to JSON format for real-time event dashboard from MLH.</p>
+                        <div class="card-actions justify-center">
+                            <a href="https://github.com/jasmeetSSalh/Mlh-Event-Dashboard-GoogleScriptApi" class="btn btn-primary" style="background-color: #314E52; color: whitesmoke;">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 px-4 mb-4 project-container" style="max-width: 500px;">
+                <div class="shadow-xl p-4 card-container rounded-lg" style="background-color: whitesmoke">
+                    <figure><img class="w-full" src="images/Projects/JavaSpotifyClone.png" alt="Album"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title nav-bar-text-color">Music & Podcast Terminal Application</h2>
+                        <p class="nav-bar-text-color">Developed an advanced OOP-driven music and podcast terminal application in Java. Designed an intuitive command line interface for song and podcast selection by criteria like artist and genre, optimizing user experience and handling edge cases.</p>
+                        <div class="card-actions justify-center">
+                            <a href="https://github.com/jasmeetSSalh/Terminal-Spotify-Clone" class="btn btn-primary" style="background-color: #314E52; color: whitesmoke;">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 px-4 mb-4 project-container" style="max-width: 500px;">
+                <div class="shadow-xl p-4 card-container rounded-lg" style="background-color: whitesmoke">
+                    <figure><img class="w-full" src="images/Projects/dataAnalytics.jpeg" alt="Album"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title nav-bar-text-color">Data Visualization and Analysis Project</h2>
+                        <p class="nav-bar-text-color">In March and April 2023, our project leveraged Python and the Matplotlib library on GitHub to analyze the impact of Artificial Intelligence in academia, utilizing data from 100+ surveys for insightful data visualization and statistical analysis.</p>
+                        <div class="card-actions justify-center">
+                            <a href="https://github.com/jasmeetSSalh/CPS412-ChatGPT-Analysis-Program" class="btn btn-primary" style="background-color: #314E52; color: whitesmoke;">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 px-4 mb-4 project-container" style="max-width: 500px;">
+                <div class="shadow-xl p-4 card-container rounded-lg" style="background-color: whitesmoke">
+                    <figure><img class="card-image" src="images/Projects/VB.png" alt="Album"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title nav-bar-text-color">Race Timer Application</h2>
+                        <p class="nav-bar-text-color">Athlete Race Manager, a Windows Forms app developed with Visual Basic.NET, serves to manage athlete data, races, and results. It employs technologies like Visual Basic.NET and Windows Forms for creating a platform to input athlete details, record race times, and display race results with medals and national flags.</p>
+                        <div class="card-actions justify-center">
+                            <a href="https://github.com/jasmeetSSalh/Race-Timer-Application/tree/main" class="btn btn-primary" style="background-color: #314E52; color: whitesmoke;">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <main id="ContactMe" class="container mx-auto mt-8">
+        <!-- Contact Me Section -->
+        <section id="contact" class="py-12">
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold">Don't be shy get in touch :)</h2>
+                <p class="text-600 mt-4">Feel free to reach out to me for any inquiries or collaboration.</p>
+            </div>
+
+            <div class="flex justify-center mt-8">
+                <form class="w-full sm:w-1/2 bg-white p-6 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="text-gray-700 w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500" placeholder="Your Name">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="text-gray-700 w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500" placeholder="Your Email">
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" class="text-gray-700 w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500" style="background-color: #314E52;">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+</body>
+</html>

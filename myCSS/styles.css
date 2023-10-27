@@ -1,0 +1,102 @@
+/* Center the navigation bar */
+nav {
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+
+}
+
+body {
+    background-color: #314E52;
+}
+
+/* Add your existing styles here */
+
+/* Style the menu toggle button */
+#menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Style the menu icon */
+#menu-toggle svg {
+    fill: #000;
+}
+
+/* Show the navigation links when the menu toggle button is clicked */
+#menu-toggle.clicked + #nav-links {
+    display: block;
+}
+
+/* Additional styles for your projects and other elements go here. */
+
+
+.card-image{
+    width: 25rem;
+    height: 24rem;
+}
+
+/* styles.css */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card-body p {
+    margin: 0.5rem 0;
+}
+
+.card-actions {
+    margin-top: 0.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.nav-bar-text-color{
+    color: #314E52;
+}
+
+    #nav-links a {
+        text-decoration: none; /* Remove underlines from links */
+        padding: 5px 10px; /* Add some padding for better hover effect */
+        background-color: transparent; /* Set the initial background color to transparent */
+        color: #314E52; /* Set the initial text color */
+        transition: background-color 0.3s; /* Add a smooth transition effect */
+        border-radius: 10px;
+    }
+
+    #nav-links a:hover {
+        background-color: #314E52; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+
+    }
